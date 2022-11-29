@@ -7,7 +7,7 @@ let birdButton  =  document.querySelector('.button-three');
 
 
 async function dog(){
-  const data = await fetch("http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true")
+  const data = await fetch("http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=false")
   const response = await data.json();
 document.getElementById('img-1').src = response
    
